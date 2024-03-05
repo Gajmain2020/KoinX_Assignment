@@ -30,7 +30,7 @@ export default function RightSidebar() {
   }
 
   return (
-    <div className="col-span-3 flex flex-col gap-5">
+    <div className="col-span-3 flex flex-col gap-5 sm:hidden ">
       <div className="rounded-xl text-center py-8 bg-blue-A700_01 text-white text-sm px-8 flex flex-col gap-4">
         <div className="text-xl font-semibold text-white leading-relaxed">
           Get Started with KoinX <br /> for FREE

@@ -9,7 +9,6 @@ export default function MainDescription() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState(null);
-  const [duration, setDuration] = useState<string>("24H");
 
   useEffect(() => {
     if (id !== "") {
@@ -50,8 +49,6 @@ export default function MainDescription() {
     );
   }
 
-  console.log(data);
-
   return (
     <>
       <div className="grid grid-cols-1 gap-8">
@@ -90,7 +87,7 @@ export default function MainDescription() {
                 )}
                 %
               </div>
-              <span className="text-blue_gray-400">({duration})</span>
+              <span className="text-blue_gray-400">(24H)</span>
             </div>
           </div>
           <div className="my-1">

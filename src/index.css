@@ -2,11 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Inter;
+
+
+
+/* Box sizing border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html,body,#root {
+  margin: 0 auto;
+  background-color: #EFF2F5;
+  display: flex;
+}
+
+
+
+/* CustomTabs.css */
+
+.custom-tab-list {
+  display: flex;
+  gap: 5px; /* Add gap between tabs */
+}
+
+.custom-tab {
+  padding: 10px; /* Adjust padding */
+  cursor: pointer;
+}
+
+.custom-tab.react-tabs__tab--selected {
+  background-color: transparent; /* Remove default background color */
+  border-bottom: #2870EA solid 3px;
+}
+
+.custom-tab.react-tabs__tab--selected:focus {
+  outline: none; /* Optionally remove focus outline */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.pnl{
+  padding: 3px 30px;
+  font-weight: 500;
+  width:100px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap:5px;
+}
+
+.loss{
+  background-color: #ee685519;
+  color: #f7324c;
+}
+
+.profit{
+  background-color: #EBF9F4;
+  color: #00b386;
+}
+
+.pnl-desc{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding:4px 10px;
+  border-radius: 5px;
+  gap:8px;
+}
+
+
 * {
   box-sizing: border-box;
   line-height: normal;
@@ -51,53 +140,4 @@ ul {
   to {
     opacity: 1;
   }
-}
-[type="text"],
-input:where(:not([type])),
-[type="email"],
-[type="url"],
-[type="password"],
-[type="number"],
-[type="date"],
-[type="datetime-local"],
-[type="month"],
-[type="search"],
-[type="tel"],
-[type="time"],
-[type="week"],
-[multiple],
-textarea,
-select {
-  appearance: none;
-  background-color: transparent;
-  border-color: unset;
-  border-width: 0;
-  border-radius: unset;
-  padding: unset;
-  font-size: unset;
-  line-height: unset;
-}
-
-/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
-[type="text"]:focus,
-[type="email"]:focus,
-[type="url"]:focus,
-[type="password"]:focus,
-[type="number"]:focus,
-[type="date"]:focus,
-[type="search"]:focus,
-[type="checkbox"]:focus,
-[type="radio"]:focus,
-[multiple]:focus,
-textarea:focus,
-select:focus {
-  --tw-ring-color: "#ebf8f4";
-  border-color: "#ebf8f4";
-}
-
-li:focus-visible {
-  outline: none;
-}
-li:hover {
-  cursor: pointer;
 }
