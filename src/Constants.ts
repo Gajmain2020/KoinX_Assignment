@@ -1,5 +1,9 @@
-import logo from './assets/images/Logo.svg'
-import navigation from './assets/images/Navigation.svg'
+import LOGO from './assets/images/Logo.svg'
+import NAVIGATION from './assets/images/Navigation.svg'
+import GET_STARTED from './assets/images/GetStarted.svg'
+import ARROW from './assets/images/Arrow.svg'
+import PROFIT from './assets/images/Profit.svg'
+import LOSS from './assets/images/Loss.svg'
 
 const NAVBAR_OPTIONS = [
     {optionName:'Crypto Taxes',link:'/crypto-taxes'},
@@ -7,7 +11,6 @@ const NAVBAR_OPTIONS = [
     {optionName:'Resource Center',link:'/resource-center'}
 ]
 
-const LOGO = logo
-const NAVIGATION = navigation
 
-export {NAVBAR_OPTIONS,LOGO,NAVIGATION}
+
+export {NAVBAR_OPTIONS,LOGO,NAVIGATION,GET_STARTED,ARROW,PROFIT,LOSS}

@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+.pnl{
+  padding: 3px 30px;
+  font-weight: 500;
+  width:100px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap:5px;
+}
+
+.loss{
+  background-color: #ee685519;
+  color: #f7324c;
+}
+
+.profit{
+  background-color: #EBF9F4;
+  color: #00b386;
+}
+
+.pnl-desc{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding:4px 10px;
+  border-radius: 5px;
+  gap:8px;
+
+}
