@@ -97,7 +97,7 @@ export default function Details() {
   );
 }
 
-function Row({ title, desc }) {
+function Row({ title, desc }:{title:string, desc:string}) {
   return (
     <>
       <div className="flex justify-between">

@@ -1,5 +1,4 @@
 import { NAVIGATION } from "../../Constants";
-import Footer from "../Footer";
 import RightSidebar from "../RightSidebar";
 import Tabs from "../Tabs";
 import Details from "./Details";

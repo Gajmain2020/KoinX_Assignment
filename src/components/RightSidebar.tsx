@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { GET_STARTED, ARROW, PROFIT, LOSS } from "../Constants";
 import axios from "axios";
-import { Data } from "../interfaces";
 import { Link } from "react-router-dom";
 
 export default function RightSidebar() {
   // making api call for fetching trending top 3 trending coins
 
-  const [trendingCoin, setTrendingCoin] = useState<Data>([]);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [trendingCoin, setTrendingCoin] = useState<any>([]);
 
   useEffect(() => {
     fetchTrendingCoinAPI()
@@ -56,7 +56,7 @@ export default function RightSidebar() {
         <div className="text-lg font-semibold">Trending Coins (24h)</div>
         {trendingCoin.length !== 0 && (
           <div className="flex flex-col gap-5">
-            {trendingCoin.map((t) => (
+            {trendingCoin.map((t:any) => (
               <SingleTrendingCoin trendingCoin={t.item} key={t.item.id} />
             ))}
           </div>
@@ -66,7 +66,7 @@ export default function RightSidebar() {
   );
 }
 
-function SingleTrendingCoin({ trendingCoin }) {
+function SingleTrendingCoin({ trendingCoin }:{trendingCoin:any}) {
   return (
     <Link to={`/${trendingCoin.id}`}>
       <div className="flex justify-between gap-5">

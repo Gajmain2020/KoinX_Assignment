@@ -1,4 +1,4 @@
-import { TabList, Tabs, Tab, TabPanel } from "react-tabs";
+import { TabList, Tabs, Tab } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { TAB_OPTIONS } from "../Constants";
 

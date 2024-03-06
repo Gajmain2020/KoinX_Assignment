@@ -1,4 +1,3 @@
-import React from "react";
 import { IMAGE1, INFO } from "../../../Constants";
 
 export default function Events() {

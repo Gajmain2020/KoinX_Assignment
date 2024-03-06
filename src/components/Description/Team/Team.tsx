@@ -1,4 +1,4 @@
-import { PIE_CHART, TEAM } from "../../../Constants";
+import {  TEAM } from "../../../Constants";
 
 export default function Team() {
   return (
@@ -31,7 +31,7 @@ export default function Team() {
   );
 }
 
-function TeamCard({ image, message, name, dest }) {
+function TeamCard({ image, message, name, dest }:{image:string, message:string, name:string, dest:string}) {
   return (
     <div className="flex sm:flex-wrap gap-6 text-blue_gray-500 bg-blue-50 px-6 py-3 rounded-md">
       <div className="flex gap-2 flex-col items-center justify-center sm:w-full">

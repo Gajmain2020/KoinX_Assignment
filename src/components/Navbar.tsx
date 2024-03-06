@@ -8,13 +8,13 @@ export default function Navbar() {
   }
 
   return (
-    <div className="flex justify-between py-2 bg-white px-24">
+    <div className="flex justify-between py-2 w-full bg-white px-24 sm:px-5">
       <div className="flex items-center">
         <Link to="/">
           <img src={LOGO} alt="KoinX Logo" />
         </Link>
       </div>
-      <div className="flex gap-5 items-center font-inter py-3 font-semibold">
+      <div className="flex gap-5 items-center font-inter py-3 font-semibold sm:hidden">
         {NAVBAR_OPTIONS.map((option) => (
           <Link to={option.link}>{option.optionName}</Link>
         ))}
@@ -24,6 +24,9 @@ export default function Navbar() {
         >
           Get Started
         </button>
+      </div>
+      <div className="hidden gap-5 items-center font-inter py-3 font-semibold sm:flex">
+        helllo
       </div>
     </div>
   );

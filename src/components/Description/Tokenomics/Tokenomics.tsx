@@ -1,4 +1,3 @@
-import React from "react";
 import { PIE_CHART } from "../../../Constants";
 
 export default function Tokenomics() {

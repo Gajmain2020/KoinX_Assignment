@@ -20,6 +20,7 @@ import PIE_CHART from './assets/images/PieChart.svg'
 import PERSON1 from './assets/images/Person1.svg'
 import PERSON2 from './assets/images/Person2.svg'
 import PERSON3 from './assets/images/Person3.svg'
+import MENU from './assets/images/Menu.svg'
 
 
 const NAVBAR_OPTIONS = [
@@ -73,4 +74,4 @@ const TAB_OPTIONS = ["Overview","Fundamentals","News Insights","Sentiment","Team
 
 
 export {NAVBAR_OPTIONS,LOGO,NAVIGATION,GET_STARTED,ARROW,PROFIT,LOSS,TAB_OPTIONS,BAR,BAR2,INFO,ROW1,ROW2,BOX_OPTIONS,IMAGE1,CARD2,NEXT_ARROW,BUY_BAR
-,HOLD_BAR,SELL_BAR,CARD_IMAGE1,CARD_IMAGE2,PIE_CHART,TEAM}
+,HOLD_BAR,SELL_BAR,CARD_IMAGE1,CARD_IMAGE2,PIE_CHART,TEAM,MENU}

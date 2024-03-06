@@ -8,7 +8,8 @@ import TradingViewWidget from "../Chart";
 export default function MainDescription() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [data, setData] = useState(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
     if (id !== "") {

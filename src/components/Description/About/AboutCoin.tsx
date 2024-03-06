@@ -1,4 +1,3 @@
-import React from "react";
 import { ARROW, CARD_IMAGE1, CARD_IMAGE2 } from "../../../Constants";
 import Divider from "../../Divider";
 
