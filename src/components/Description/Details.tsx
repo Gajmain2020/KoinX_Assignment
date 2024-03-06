@@ -1,11 +1,16 @@
-import { BAR, BAR2, INFO } from "../../Constants";
+import { BAR, BAR2, INFO, ROW1, ROW2 } from "../../Constants";
 import Divider from "../Divider";
+import AboutCoin from "./About/AboutCoin";
+import AnalystEstimate from "./Analyst Estimate/AnalystEstimate";
+import Events from "./Event/Events";
+import Team from "./Team/Team";
+import Tokenomics from "./Tokenomics/Tokenomics";
 
 export default function Details() {
   return (
-    <div>
+    <div className="grid gap-5">
       <div className="h-full px-6 py-6 grid gap-5 bg-white rounded-md">
-        <div className="text-xl font-semibold">Performance</div>
+        <div className="text-xl font-bold text-gray-900_07">Performance</div>
         <div className="flex gap-4 my-2 justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-3 px-3">
             <span className="text-sm">Today's Low</span>
@@ -40,48 +45,14 @@ export default function Details() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-1 gap-20 sm:gap-0">
           <div className="grid">
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">Bitcoin Price</span>
-              <span className="font-semibold">$16,815.46</span>
-            </div>
-            <Divider />
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">24h Low / 24h High</span>
-              <span className="font-semibold">$16,382.07 / $16,874.12</span>
-            </div>
-            <Divider />
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">7d Low / 7d High</span>
-              <span className="font-semibold">$16,382.07 / $16,874.12</span>
-            </div>
-            <Divider />
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">Trading Volumn</span>
-              <span className="font-semibold">$23,24,202,782</span>
-            </div>
-            <Divider />
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">Market Cap Rank</span>
-              <span className="font-semibold">#1</span>
-            </div>
-            <Divider />
+            {ROW1.map((row) => (
+              <Row title={row.title} desc={row.desc} />
+            ))}
           </div>
           <div className="grid">
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">Market Cap</span>
-              <span className="font-semibold">$323,507,290,047</span>
-            </div>
-            <Divider />
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">Market Cap Dominance</span>
-              <span className="font-semibold">38.343%</span>
-            </div>
-            <Divider />
-            <div className="flex justify-between">
-              <span className="text-blue_gray-400">Volumn / Market Cap</span>
-              <span className="font-semibold">0.0718</span>
-            </div>
-            <Divider />
+            {ROW2.map((row) => (
+              <Row title={row.title} desc={row.desc} />
+            ))}
             <div className="flex justify-between items-center">
               <span className="text-blue_gray-400">All-Time High</span>
               <span className="font-semibold flex flex-col justify-end">
@@ -109,6 +80,31 @@ export default function Details() {
           </div>
         </div>
       </div>
+      {/* sentiment page */}
+      <div className="h-full px-6 py-6 grid gap-5 bg-white rounded-md">
+        <div className="text-xl font-bold text-gray-900_07">Sentiment</div>
+        <Events />
+
+        <AnalystEstimate />
+      </div>
+      {/* ABOUT COMPONENT */}
+      <AboutCoin />
+
+      {/* TOKENOMICS COMPONENT */}
+      <Tokenomics />
+      <Team />
     </div>
+  );
+}
+
+function Row({ title, desc }) {
+  return (
+    <>
+      <div className="flex justify-between">
+        <span className="text-blue_gray-400">{title}</span>
+        <span className="font-semibold">{desc}</span>
+      </div>
+      <Divider />
+    </>
   );
 }

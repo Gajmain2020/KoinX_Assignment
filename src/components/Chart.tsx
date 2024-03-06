@@ -40,7 +40,7 @@ const TradingViewWidget: React.FC = () => {
     <div
       className="tradingview-widget-container"
       ref={container}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "60%", width: "100%" }}
     >
       <div
         className="tradingview-widget-container__widget"

@@ -16,6 +16,9 @@ html,body,#root {
   margin: 0 auto;
   background-color: #EFF2F5;
   display: flex;
+  height: fit-content;
+  width:  fit-content;
+  outline: 5px solid red;
 }
 
 

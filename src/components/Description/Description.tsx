@@ -1,4 +1,5 @@
 import { NAVIGATION } from "../../Constants";
+import Footer from "../Footer";
 import RightSidebar from "../RightSidebar";
 import Tabs from "../Tabs";
 import Details from "./Details";
@@ -14,15 +15,16 @@ export default function Bitcoin() {
         <img src={NAVIGATION} alt="Navigation Image" /> <span>Bitcoin</span>
       </div>
       <div className="grid grid-cols-10 sm:grid-cols-1 gap-4">
-        <div className="col-span-7 ">
-          <div className="h-full px-6 py-6 bg-white rounded-md">
-            <MainDescription />
+        <div className="col-span-7">
+          <div>
+            <div className="h-4/5 px-6 py-6 bg-white rounded-md">
+              <MainDescription />
+            </div>
+            <div className="my-5">
+              <Tabs />
+            </div>
+            <Details />
           </div>
-          <div className="my-5">
-            <Tabs />
-          </div>
-
-          <Details />
         </div>
         {/* Right Sidebar constant component */}
         <RightSidebar />

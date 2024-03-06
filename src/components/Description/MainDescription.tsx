@@ -96,7 +96,7 @@ export default function MainDescription() {
         </div>
       </div>
       <Divider />
-      <div className="h-2/3">
+      <div className="h-4/5">
         <TradingViewWidget />
       </div>
     </>
