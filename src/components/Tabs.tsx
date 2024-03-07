@@ -4,7 +4,7 @@ import { TAB_OPTIONS } from "../Constants";
 
 export default function TabsView() {
   return (
-    <div className="my-2 overflow-auto font-semibold border-transparent text-sm text-blue_gray-500">
+    <div className="my-2 overflow-auto font-semibold border-transparent text-sm text-blue_gray-500 no-scrollbar">
       <Tabs>
         <TabList className="flex gap-5 custom-tab-list">
           {TAB_OPTIONS.map((tab) => (

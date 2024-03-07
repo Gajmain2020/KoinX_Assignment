@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="px-24 sm:px-2 ">
+      <div className="px-20 sm:px-2 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:id" element={<Description />} />

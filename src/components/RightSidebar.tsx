@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { GET_STARTED, ARROW, PROFIT, LOSS } from "../Constants";
 import axios from "axios";
@@ -30,7 +31,7 @@ export default function RightSidebar() {
   }
 
   return (
-    <div className="col-span-3 flex flex-col gap-5 sm:col-span-1 ">
+    <div className="col-span-3 flex flex-col gap-5 sm:w-[100%] sm:mt-5">
       <div className="rounded-xl text-center py-8 bg-blue-A700_01 text-white text-sm px-8 flex flex-col gap-4">
         <div className="text-xl font-semibold text-white leading-relaxed">
           Get Started with KoinX <br /> for FREE

@@ -66,24 +66,24 @@ export default function AboutCoin() {
                 Profit
               </div>
               <div>
-                <button className="bg-white flex items-center justify-center gap-2 px-5 py-2 rounded-md text-gray-950">
-                  Check Now <img src={ARROW} alt="" />
+                <button className="bg-white flex items-center truncate justify-center gap-2 px-5 py-2 rounded-md text-gray-950">
+                  Check Now <img src={ARROW} className="sm:w-5" alt="" />
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="flex gap-8 font-semibold rounded-md text-gray-50 flex-1 bg-gradient2 px-2 py-2">
+          <div className="flex gap-8 font-semibold rounded-md  text-gray-50 flex-1 bg-gradient2 px-2 py-2">
             <img src={CARD_IMAGE2} alt="" />
             <div className="grid">
-              <div className="text-xl">
+              <div className="text-xl sm:text-medium">
                 Calculate your tax
                 <br />
                 liability
               </div>
               <div>
-                <button className="bg-white flex items-center justify-center gap-2 px-5 py-2 rounded-md text-gray-950">
-                  Check Now <img src={ARROW} alt="" />
+                <button className="bg-white flex items-center justify-center truncate gap-2 px-5 py-2 rounded-md text-gray-950">
+                  Check Now <img src={ARROW} className="sm:w-5" alt="" />
                 </button>
               </div>
             </div>
