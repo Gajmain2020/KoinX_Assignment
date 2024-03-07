@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <div className="px-20 sm:px-2 ">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Bitcoin />} />
           <Route path="/:id">
             <Route path="" element={<Bitcoin />} />
           </Route>
