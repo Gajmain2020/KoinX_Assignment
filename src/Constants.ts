@@ -12,6 +12,7 @@ import IMAGE2 from './assets/images/Image2.svg'
 import CARD2 from './assets/images/Card2.svg'
 import NEXT_ARROW from './assets/images/NextArrow.svg'
 import BUY_BAR from './assets/images/BuyBar.svg'
+import PROFIT_BAR from './assets/images/ProfitBar2.svg'
 import HOLD_BAR from './assets/images/HoldBar.svg'
 import SELL_BAR from './assets/images/SellBar.svg'
 import CARD_IMAGE1 from './assets/images/CardImage1.svg'
@@ -21,6 +22,9 @@ import PERSON1 from './assets/images/Person1.svg'
 import PERSON2 from './assets/images/Person2.svg'
 import PERSON3 from './assets/images/Person3.svg'
 import MENU from './assets/images/Menu.svg'
+import LOSS_BAR from './assets/images/MidBar.svg'
+import HOLD_BAR2 from './assets/images/LossBar2.svg'
+import PL1 from './assets/images/PL1.svg'
 
 
 const NAVBAR_OPTIONS = [
@@ -74,4 +78,4 @@ const TAB_OPTIONS = ["Overview","Fundamentals","News Insights","Sentiment","Team
 
 
 export {NAVBAR_OPTIONS,LOGO,NAVIGATION,GET_STARTED,ARROW,PROFIT,LOSS,TAB_OPTIONS,BAR,BAR2,INFO,ROW1,ROW2,BOX_OPTIONS,IMAGE1,CARD2,NEXT_ARROW,BUY_BAR
-,HOLD_BAR,SELL_BAR,CARD_IMAGE1,CARD_IMAGE2,PIE_CHART,TEAM,MENU}
+,HOLD_BAR,SELL_BAR,CARD_IMAGE1,CARD_IMAGE2,PIE_CHART,TEAM,MENU,PROFIT_BAR,HOLD_BAR2,LOSS_BAR,PL1}

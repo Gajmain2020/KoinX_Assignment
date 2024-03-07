@@ -11,7 +11,8 @@ export default function MainDescription() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null);
 
-  if (!id) {
+  if (!id && !data) {
+    console.log("i am triggered");
     fetchDetails("bitcoin")
       .then((res) => {
         setData(res);

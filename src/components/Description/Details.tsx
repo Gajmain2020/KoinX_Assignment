@@ -1,4 +1,4 @@
-import { BAR, BAR2, INFO, ROW1, ROW2 } from "../../Constants";
+import { BAR, BAR2, INFO, PL1, ROW1, ROW2 } from "../../Constants";
 import Divider from "../Divider";
 import AboutCoin from "./About/AboutCoin";
 import AnalystEstimate from "./Analyst Estimate/AnalystEstimate";
@@ -12,28 +12,30 @@ export default function Details() {
       <div className="h-full px-6 py-6 grid gap-5 bg-white rounded-md">
         <div className="text-xl font-bold text-gray-900_07">Performance</div>
         <div className="flex gap-4 my-2 justify-center items-center">
-          <div className="flex flex-col justify-center items-center gap-3 px-3">
+          <div className="flex flex-col justify-center items-center gap-3 sm:gap-1 px-3 sm:px-1">
             <span className="text-sm">Today's Low</span>
             <span>46,930.22</span>
           </div>
           <div className="flex-1">
-            <img src={BAR} className="mx-auto" alt="Bar" />
+            <img src={BAR} className="mx-auto sm:hidden" alt="Bar" />
+            <img src={PL1} className="mx-auto sm:block hidden" alt="Bar" />
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 px-3">
+          <div className="flex flex-col justify-center items-center gap-3 sm:gap-1 px-3 sm:px-1">
             <span className="text-sm">Today's High</span>
             <span>49,343.83</span>
           </div>
         </div>
 
         <div className="flex gap-4 my-2 justify-center items-center">
-          <div className="flex flex-col justify-center items-center gap-3 px-3">
+          <div className="flex flex-col justify-center items-center gap-3 sm:gap-1 px-3 sm:px-1">
             <span className="text-sm">52W Low</span>
             <span>16,930.22</span>
           </div>
           <div className="flex-1">
-            <img src={BAR2} className="mx-auto" alt="Bar" />
+            <img src={BAR2} className="mx-auto sm:hidden" alt="Bar" />
+            <img src={PL1} className="mx-auto sm:block hidden" alt="Bar" />
           </div>
-          <div className="flex flex-col justify-center items-center gap-3 px-3">
+          <div className="flex flex-col justify-center items-center gap-3 sm:gap-1 px-3 sm:px1">
             <span className="text-sm">52W High</span>
             <span>49,743.83</span>
           </div>
@@ -97,7 +99,7 @@ export default function Details() {
   );
 }
 
-function Row({ title, desc }:{title:string, desc:string}) {
+function Row({ title, desc }: { title: string; desc: string }) {
   return (
     <>
       <div className="flex justify-between">
