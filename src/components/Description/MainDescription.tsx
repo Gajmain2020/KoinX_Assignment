@@ -11,6 +11,14 @@ export default function MainDescription() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null);
 
+  if (!id) {
+    fetchDetails("bitcoin")
+      .then((res) => {
+        setData(res);
+      })
+      .catch((err) => console.log(err));
+  }
+
   useEffect(() => {
     if (id !== "") {
       fetchDetails(id)
